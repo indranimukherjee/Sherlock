@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html ng-app="sherlockApp" ng-controller="sherlockCtrl as ctrl">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1" />
+    <title>{{ctrl.title}}</title>
+
+    <link rel="stylesheet" href="lib/material-lite.css">
+    <link rel="stylesheet" href="lib/angular-material.css">
+    <link rel="stylesheet" href="lib/nv.d3.css">
+    <link rel="stylesheet" href="mcss/custom.css">
+
+</head>
+<body layout="row">
+    <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+        <md-toolbar class="md-theme-indigo">
+            <a ui-sref="home" style="color:white;text-decoration:none;"><h1 class="md-toolbar-tools">Sherlock</h1></a>
+        </md-toolbar>
+        <md-content layout-padding>
+            <p hide-md show-gt-md>
+                <a ui-sref="home">Dashboard</a>
+            </p>
+        </md-content>
+    </md-sidenav>
+    <div layout="column" tabindex="-1" role="main" flex>
+        <md-toolbar class="md-default-theme">
+            <div class="md-toolbar-tools docs-toolbar-tools" tabindex="-1">
+                <md-button class="md-icon-button" hide-gt-sm aria-label="Toggle Menu" ng-click="ctrl.toggleLeft()">
+                    <md-icon md-svg-icon="menuitem"></md-icon>
+                </md-button>
+                <a ui-sref="home" style="color:white;text-decoration:none;"><h1 class="md-toolbar-tools" hide-gt-sm>Sherlock</h1></a>
+                <div layout="row" flex class="fill-height">
+                    <span flex></span>
+                    <div class="md-toolbar-item docs-tools" layout="row" layout-align="center center">
+                        <div ng-include src="ctrl.templateUrlToolbar"></div>
+                    </div>
+                </div>
+            </div>
+        </md-toolbar>
+        <md-content md-scroll-y flex layout-padding>
+            <div ui-view style="margin-top: 10px;"></div>
+        </md-content>
+    </div>
+    <script src="lib/d3.js"></script>
+
+    <script>
+        if (!window.angular) {
+            document.write('<script src="lib/angular.js"><\/script>');
+        }
+    </script>
+
+    <script src="lib/angular-touch.js"></script>
+    <script src="lib/angular-animate.js"></script>
+    <script src="lib/angular-aria.js"></script>
+    <script src="lib/angular-messages.js"></script>
+    <script src="lib/angular-resource.js"></script>
+    <script src="lib/ui-router.js"></script>
+
+    <script src="lib/angular-material.js"></script>
+    <script src="lib/local-storage.js"></script>
+
+    <script src="lib/nv.d3.js"></script>
+    <script src="lib/ng-nvd3.js"></script>
+
+    <script src="signalrScripts/jquery-1.10.2.js"></script>
+    <script src="signalrScripts/jquery.signalR-2.1.2.js"></script>
+    <script src="/SherlockAPI/signalr/hubs"></script>
+
+
+    <script src="mjs/sherlock.js"></script>
+</body>
+</html>

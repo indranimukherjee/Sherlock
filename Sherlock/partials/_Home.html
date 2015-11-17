@@ -1,0 +1,47 @@
+﻿
+<div layout="row" layout-sm="column" layout-align="center" flex>
+    <div flex-gt-sm="30">
+    </div>
+    <div flex-gt-sm="50">
+        <strong style="font-size:17px;"> {{home.productName}} </strong>
+    </div>
+</div>
+<md-divider></md-divider>
+<br/>
+<div layout="row" layout-sm="column" flex>
+    <div flex-gt-sm="30">
+        <nvd3 options="home.optionsPie" data="home.dataPie"></nvd3>
+    </div>
+    <div flex-gt-sm="10">
+    </div>
+    <div flex-gt-sm="50" layout="column">
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="overflow:auto">
+            <thead>
+                <tr>
+                    <th>Lead ID</th>
+                    <th class="mdl-data-table__cell--non-numeric">Lead Source</th>
+                    <th class="mdl-data-table__cell--non-numeric">Lead Status</th>
+                    <th class="mdl-data-table__cell--non-numeric">Lead Stage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in home.leadStatus">
+                    <td>{{item.LeadId}}</td>
+                    <td class="mdl-data-table__cell--non-numeric">{{item.LeadSource}}</td>
+                    <td class="mdl-data-table__cell--non-numeric">{{item.LeadStatus}}</td>
+                    <td class="mdl-data-table__cell--non-numeric">{{item.LeadStage}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div layout="row" layout-sm="column" flex>
+    <div flex-gt-sm="50">
+        <md-switch class="md-warn md-hue-3 md-block" style="padding-left: 45px;" aria-label="Start Stop Live" ng-model="home.data.cb5" ng-change="home.onLiveDataChange(home.data.cb5)">            
+        </md-switch>
+        <nvd3 options="home.optionsLive" data="home.dataLive" api="api"></nvd3>
+    </div>
+    <div flex-gt-sm="50">
+        <nvd3 options="home.optionsStack" data="home.dataStack"></nvd3>
+    </div>
+</div>
