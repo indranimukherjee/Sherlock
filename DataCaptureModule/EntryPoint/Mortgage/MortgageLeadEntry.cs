@@ -35,10 +35,12 @@ namespace DataCaptureModule.EntryPoint.Mortgage
         {
             t_mortgage_lead mortgage = Mapper.Map<t_mortgage_lead>(lead);
             mortgage.lead_id = leadId;
-
+            mortgage.created_on = DateTime.Now;
+            mortgage.created_by = 2;
             _saveLead.SaveLeadDetails<t_mortgage_lead>(mortgage);
 
             t_mortgage_lead_log mortgageLog = Mapper.Map<t_mortgage_lead_log>(mortgage);
+            mortgageLog.created_on = DateTime.Now;
             mortgageLog.stage_id = (int)LeadStageEnum.Raw;
 
             _saveLead.SaveLeadDetails<t_mortgage_lead_log>(mortgageLog);

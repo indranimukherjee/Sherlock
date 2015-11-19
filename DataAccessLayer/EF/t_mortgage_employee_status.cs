@@ -17,6 +17,8 @@ namespace DataAccessLayer.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public t_mortgage_employee_status()
         {
+            this.t_buyer_mortgage_criteria = new HashSet<t_buyer_mortgage_criteria>();
+            this.t_buyer_mortgage_face = new HashSet<t_buyer_mortgage_face>();
             this.t_mortgage_lead_log = new HashSet<t_mortgage_lead_log>();
             this.t_mortgage_lead = new HashSet<t_mortgage_lead>();
         }
@@ -24,6 +26,10 @@ namespace DataAccessLayer.EF
         public int employment_status { get; set; }
         public string status_type { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<t_buyer_mortgage_criteria> t_buyer_mortgage_criteria { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<t_buyer_mortgage_face> t_buyer_mortgage_face { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<t_mortgage_lead_log> t_mortgage_lead_log { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

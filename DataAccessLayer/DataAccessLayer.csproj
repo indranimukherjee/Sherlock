@@ -52,154 +52,163 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EF\Model\GenericRepository\GenericRepository.cs" />
-    <Compile Include="EF\Sherlock.Context.cs">
+    <Compile Include="EF\SherlockModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Sherlock.Context.tt</DependentUpon>
+      <DependentUpon>SherlockModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\Sherlock.cs">
+    <Compile Include="EF\SherlockModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EF\Sherlock.Designer.cs">
+    <Compile Include="EF\SherlockModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Sherlock.edmx</DependentUpon>
+      <DependentUpon>SherlockModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="EF\t_asu_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_authentication_token.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\t_buyer_integration.cs">
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_buyer_master.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\t_buyer_mortgage_criteria.cs">
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_buyer_mortgage_face.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_buyer_product.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_buyer_product_criteria.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_buyer_product_face.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\t_buyer_state.cs">
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_common_leads.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_common_leads_log.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_debt_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_define_category.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_equityrelease_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_hoax.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_ipi_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_life_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_loan_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_logbookloan_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_annual_income.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_credit.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_employee_status.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_lead_log.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_period_term.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_property_type.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_rate_type.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_mortgage_repayment.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_pmi_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_postcode.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_ppi_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_product_master.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_product_website.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_property_location.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_role_master.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_sme_mi_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_solar_lead.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_stage_master.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_status_type_master.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_transfer_log.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_user_master.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_user_role.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\t_website_master.cs">
-      <DependentUpon>Sherlock.tt</DependentUpon>
+      <DependentUpon>SherlockModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="EF\Sherlock.edmx">
+    <EntityDeploy Include="EF\SherlockModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Sherlock.Designer.cs</LastGenOutput>
+      <LastGenOutput>SherlockModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="EF\Sherlock.edmx.diagram">
-      <DependentUpon>Sherlock.edmx</DependentUpon>
+    <None Include="EF\SherlockModel.edmx.diagram">
+      <DependentUpon>SherlockModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -207,15 +216,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EF\Sherlock.Context.tt">
+    <Content Include="EF\SherlockModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Sherlock.edmx</DependentUpon>
-      <LastGenOutput>Sherlock.Context.cs</LastGenOutput>
+      <DependentUpon>SherlockModel.edmx</DependentUpon>
+      <LastGenOutput>SherlockModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="EF\Sherlock.tt">
+    <Content Include="EF\SherlockModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Sherlock.edmx</DependentUpon>
-      <LastGenOutput>Sherlock.cs</LastGenOutput>
+      <DependentUpon>SherlockModel.edmx</DependentUpon>
+      <LastGenOutput>SherlockModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

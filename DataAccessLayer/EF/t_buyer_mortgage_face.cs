@@ -30,8 +30,30 @@ namespace DataAccessLayer.EF
         public bool had_bankruptcy { get; set; }
         public bool applied_iva { get; set; }
         public bool had_ccj { get; set; }
+        public string title { get; set; }
+        public string first_name { get; set; }
+        public string last_name { get; set; }
+        public string city { get; set; }
+        public string postcode { get; set; }
+        public string Home_Mobile_Phone1 { get; set; }
+        public string Home_Mobile_Phone2 { get; set; }
+        public string address { get; set; }
+        public string email { get; set; }
+        public System.DateTime date_of_birth { get; set; }
+        public int property_type { get; set; }
+        public string ltv { get; set; }
+        public int rate_id { get; set; }
+        public int repayment_id { get; set; }
     
         public virtual t_buyer_master t_buyer_master { get; set; }
+        public virtual t_mortgage_annual_income t_mortgage_annual_income { get; set; }
+        public virtual t_mortgage_credit t_mortgage_credit { get; set; }
+        public virtual t_mortgage_employee_status t_mortgage_employee_status { get; set; }
+        public virtual t_mortgage_period_term t_mortgage_period_term { get; set; }
+        public virtual t_mortgage_property_type t_mortgage_property_type { get; set; }
+        public virtual t_mortgage_rate_type t_mortgage_rate_type { get; set; }
+        public virtual t_mortgage_repayment t_mortgage_repayment { get; set; }
         public virtual t_product_master t_product_master { get; set; }
+        public virtual t_property_location t_property_location { get; set; }
     }
 }

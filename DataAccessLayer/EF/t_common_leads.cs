@@ -11,7 +11,8 @@ namespace DataAccessLayer.EF
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public partial class t_common_leads
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -88,5 +89,9 @@ namespace DataAccessLayer.EF
         public virtual ICollection<t_solar_lead> t_solar_lead { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<t_transfer_log> t_transfer_log { get; set; }
+
+        [NotMapped]
+        public string product_name { get; set; }
+
     }
 }

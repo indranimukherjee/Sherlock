@@ -49,7 +49,7 @@ namespace DataCaptureModule.LeadScreening
 
             _saveLead.SaveLeadDetails<t_common_leads_log>(commonLog);
 
-            T leadStage = UtilityMethods.SetStages<T>(lead.lead_id, lead.source, GlobalConstants.Screened, GlobalConstants.NewStatus, lead.t_product_master.product_name);
+            T leadStage = UtilityMethods.SetStages<T>(lead.lead_id, lead.source, GlobalConstants.Screened, GlobalConstants.NewStatus, lead.product_name);
             //M tk = (M)Convert.ChangeType(leadStage, typeof(M));
 
             SendBackStatus(leadStage);

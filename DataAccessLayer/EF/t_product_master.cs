@@ -17,6 +17,7 @@ namespace DataAccessLayer.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public t_product_master()
         {
+            this.t_buyer_mortgage_criteria = new HashSet<t_buyer_mortgage_criteria>();
             this.t_buyer_mortgage_face = new HashSet<t_buyer_mortgage_face>();
             this.t_buyer_product = new HashSet<t_buyer_product>();
             this.t_buyer_product_criteria = new HashSet<t_buyer_product_criteria>();
@@ -31,6 +32,8 @@ namespace DataAccessLayer.EF
         public int parent_product_id { get; set; }
         public bool product_deleted { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<t_buyer_mortgage_criteria> t_buyer_mortgage_criteria { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<t_buyer_mortgage_face> t_buyer_mortgage_face { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

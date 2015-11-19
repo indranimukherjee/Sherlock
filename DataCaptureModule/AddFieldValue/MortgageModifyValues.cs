@@ -29,6 +29,7 @@ namespace DataCaptureModule.AddFieldValue
             mortgageLog.ltv = GetFormattedScore(GetPercentageRounded(mortgageLog.loan_value, mortgageLog.property_value));
 
             mortgageLog.stage_id = (int)LeadStageEnum.ValueAdded;
+            mortgageLog.created_on = DateTime.Now;
             _saveLead.SaveLeadDetails<t_mortgage_lead_log>(mortgageLog);
 
             M leadStage = UtilityMethods.SetStages<M>(mortgage.lead_id, "", GlobalConstants.Modified, GlobalConstants.NewStatus, GlobalConstants.Mortgage);
