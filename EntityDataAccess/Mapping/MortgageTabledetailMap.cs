@@ -34,8 +34,8 @@ namespace EntityDataAccess.Mapping
             Property(t => t.repayment_id).IsRequired();
             Property(t => t.CreatedOn).IsRequired();
             Property(t => t.CreatedBy).IsRequired();
-            Property(t => t.UpdatedOn);
-            Property(t => t.UpdatedBy);
+            Property(t => t.UpdatedOn).IsOptional();
+            Property(t => t.UpdatedBy).IsOptional();
 
 
             ToTable("t_mortgage_lead");

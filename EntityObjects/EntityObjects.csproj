@@ -44,6 +44,7 @@
     <Compile Include="Objects\CommonTableDetail.cs" />
     <Compile Include="Objects\MortgageTabledetail.cs" />
     <Compile Include="Objects\ProductDetail.cs" />
+    <Compile Include="Objects\UserDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

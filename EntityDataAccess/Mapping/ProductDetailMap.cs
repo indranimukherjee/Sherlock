@@ -17,8 +17,8 @@ namespace EntityDataAccess.Mapping
 
             ////properties  
             Property(t => t.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(t => t.product_name);
-            Property(t => t.parent_product_id);
+            Property(t => t.product_name).IsRequired();
+            Property(t => t.parent_product_id).IsRequired();
             Property(t => t.product_deleted).IsRequired();
            
 

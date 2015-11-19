@@ -53,6 +53,7 @@
     <Compile Include="Mapping\CommonTableDetailMap.cs" />
     <Compile Include="Mapping\MortgageTabledetailMap.cs" />
     <Compile Include="Mapping\ProductDetailMap.cs" />
+    <Compile Include="Mapping\UserDetailMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
