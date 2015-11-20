@@ -9,10 +9,11 @@ using EntityObjects.Objects;
 
 namespace EntityDataAccess.Mapping
 {
-    class ProductDetailMap : EntityTypeConfiguration<ProductDetail>
+    public class ProductDetailMap : EntityTypeConfiguration<ProductDetail>
     {
         public ProductDetailMap()
         {
+
             HasKey(t => t.ID);
 
             ////properties  

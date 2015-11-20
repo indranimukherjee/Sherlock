@@ -50,10 +50,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\EFDbContext.cs" />
+    <Compile Include="Mapping\BuyerMortgageCriteriaDetailMap.cs" />
+    <Compile Include="Mapping\BuyerMortgageFaceDetailMap.cs" />
+    <Compile Include="Mapping\BuyerProductIntegrationDetailMap.cs" />
+    <Compile Include="Mapping\BuyerProductStateDetailMap.cs" />
+    <Compile Include="Mapping\CategoryDetailMap.cs" />
     <Compile Include="Mapping\CommonTableDetailMap.cs" />
+    <Compile Include="Mapping\MortgageAnnualincomeDetailMap.cs" />
     <Compile Include="Mapping\MortgageTabledetailMap.cs" />
+    <Compile Include="Mapping\PostcodeDetailMap.cs" />
     <Compile Include="Mapping\ProductDetailMap.cs" />
+    <Compile Include="Mapping\ProductmasterDetailMap.cs" />
+    <Compile Include="Mapping\ProductWebsiteDetailMap.cs" />
+    <Compile Include="Mapping\RoleMasterDetailMap.cs" />
+    <Compile Include="Mapping\StageMasterDetailMap.cs" />
+    <Compile Include="Mapping\StatusMasterDetailMap.cs" />
+    <Compile Include="Mapping\TransferDetailMap.cs" />
     <Compile Include="Mapping\UserDetailMap.cs" />
+    <Compile Include="Mapping\UserRoleDetailMap.cs" />
+    <Compile Include="Mapping\WebsiteMasterDetailMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

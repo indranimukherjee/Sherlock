@@ -41,10 +41,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Objects\BaseEntity.cs" />
+    <Compile Include="Objects\BuyerMasterDetail.cs" />
+    <Compile Include="Objects\BuyerMortgageCriteriaDetail.cs" />
+    <Compile Include="Objects\BuyerMortgageFaceDetail.cs" />
+    <Compile Include="Objects\BuyerProductIntegrationDetail.cs" />
+    <Compile Include="Objects\BuyerProductStateDetail.cs" />
+    <Compile Include="Objects\CategoryDetail.cs" />
     <Compile Include="Objects\CommonTableDetail.cs" />
+    <Compile Include="Objects\MortgageAnnualincomeDetail.cs" />
+    <Compile Include="Objects\MortgageCreditDetail.cs" />
     <Compile Include="Objects\MortgageTabledetail.cs" />
+    <Compile Include="Objects\PostcodeDetail.cs" />
     <Compile Include="Objects\ProductDetail.cs" />
+    <Compile Include="Objects\ProductWebsiteDetail.cs" />
+    <Compile Include="Objects\RoleMasterDetail.cs" />
+    <Compile Include="Objects\StageMasterDetail..cs" />
+    <Compile Include="Objects\StatusMasterDetail.cs" />
+    <Compile Include="Objects\TransferDetail.cs" />
     <Compile Include="Objects\UserDetail.cs" />
+    <Compile Include="Objects\UserRoleDetail.cs" />
+    <Compile Include="Objects\WebsiteMasterDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
