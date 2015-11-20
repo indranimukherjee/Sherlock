@@ -57,6 +57,13 @@
     <Compile Include="Mapping\CategoryDetailMap.cs" />
     <Compile Include="Mapping\CommonTableDetailMap.cs" />
     <Compile Include="Mapping\MortgageAnnualincomeDetailMap.cs" />
+    <Compile Include="Mapping\MortgageCreditDetailMap.cs" />
+    <Compile Include="Mapping\MortgageEmpStatusDetailMap.cs" />
+    <Compile Include="Mapping\MortgagePeriodTermDetailMap.cs" />
+    <Compile Include="Mapping\MortgagePropertyLocationDetailMap.cs" />
+    <Compile Include="Mapping\MortgagePropertyTypeDetailMap.cs" />
+    <Compile Include="Mapping\MortgagerateRateDetailMap.cs" />
+    <Compile Include="Mapping\MortgagerateRepaymentDetailMap.cs" />
     <Compile Include="Mapping\MortgageTabledetailMap.cs" />
     <Compile Include="Mapping\PostcodeDetailMap.cs" />
     <Compile Include="Mapping\ProductDetailMap.cs" />

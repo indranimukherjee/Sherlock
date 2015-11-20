@@ -50,6 +50,12 @@
     <Compile Include="Objects\CommonTableDetail.cs" />
     <Compile Include="Objects\MortgageAnnualincomeDetail.cs" />
     <Compile Include="Objects\MortgageCreditDetail.cs" />
+    <Compile Include="Objects\MortgageEmpStatusDetail.cs" />
+    <Compile Include="Objects\MortgagePeriodTermDetail.cs" />
+    <Compile Include="Objects\MortgagePropertyLocationDetail.cs" />
+    <Compile Include="Objects\MortgagePropertyTypeDetail.cs" />
+    <Compile Include="Objects\MortgagerateRateDetail.cs" />
+    <Compile Include="Objects\MortgagerateRepaymentDetail.cs" />
     <Compile Include="Objects\MortgageTabledetail.cs" />
     <Compile Include="Objects\PostcodeDetail.cs" />
     <Compile Include="Objects\ProductDetail.cs" />
