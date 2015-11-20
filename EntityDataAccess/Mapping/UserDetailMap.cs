@@ -15,7 +15,7 @@ namespace EntityDataAccess.Mapping
         {
             HasKey(t => t.ID);
 
-            ////properties  
+            //properties  
             Property(t => t.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(t => t.user_name).IsRequired();
             Property(t => t.first_name).IsRequired();

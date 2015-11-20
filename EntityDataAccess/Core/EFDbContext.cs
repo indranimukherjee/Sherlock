@@ -8,7 +8,7 @@ namespace EntityDataAccess.Core
 {
    public class EFDbContext : DbContext
     {
-        public EFDbContext() : base ("name=DbConnectionString")
+        public EFDbContext() : base ("name=SherlockdbEntities")
         {
 
         }
