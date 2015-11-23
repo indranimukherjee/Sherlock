@@ -44,8 +44,8 @@ namespace DataCaptureModule
             container.RegisterType<IModifyValues, MortgageModifyValues>();
 
             //automapper
-            Mapper.CreateMap<t_mortgage_lead, t_mortgage_lead_log>();
-            Mapper.CreateMap<t_common_leads, t_common_leads_log>();
+            //Mapper.CreateMap<t_mortgage_lead, t_mortgage_lead_log>();
+            //Mapper.CreateMap<t_common_leads, t_common_leads_log>();
 
         }
     }

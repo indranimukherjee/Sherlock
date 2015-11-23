@@ -41,8 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuyerSettings\BuyerDetailCapture\BuyerDetailEntry\BuyerDetailEntry.cs" />
-    <Compile Include="BuyerSettings\BuyerDetailCapture\SaveBuyerInfo\Isavebuyer.cs" />
-    <Compile Include="BuyerSettings\BuyerDetailCapture\SaveBuyerInfo\Savebuyer.cs" />
+    <Compile Include="BuyerSettings\BuyerDetailCapture\BuyerDetailEntry\IBuyerDetailEntry.cs" />
+    <Compile Include="SaveBuyerInfo\Isavebuyer.cs" />
+    <Compile Include="SaveBuyerInfo\Savebuyer.cs" />
     <Compile Include="BuyerSettings\BuyerFace\BuyerFace.cs" />
     <Compile Include="BuyerSettings\BuyerFace\IBuyerFace.cs" />
     <Compile Include="BuyerSettings\productMapping\BuyerProductMapp.cs" />
@@ -54,9 +55,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
-      <Project>{d058b5e2-9cd5-41ce-bad4-20b1800340c8}</Project>
-      <Name>DataAccessLayer</Name>
+    <ProjectReference Include="..\EntityDataAccess\EntityDataAccess.csproj">
+      <Project>{ac850f8f-62b5-42df-a83b-ea3468b560a9}</Project>
+      <Name>EntityDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityObjects\EntityObjects.csproj">
+      <Project>{c1aa4e5b-8f91-49fb-9f75-2750acb4e317}</Project>
+      <Name>EntityObjects</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

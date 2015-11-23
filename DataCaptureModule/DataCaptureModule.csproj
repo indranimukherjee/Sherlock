@@ -90,9 +90,13 @@
     <Folder Include="EntryPoint\LifeInsurance\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
-      <Project>{d058b5e2-9cd5-41ce-bad4-20b1800340c8}</Project>
-      <Name>DataAccessLayer</Name>
+    <ProjectReference Include="..\EntityDataAccess\EntityDataAccess.csproj">
+      <Project>{ac850f8f-62b5-42df-a83b-ea3468b560a9}</Project>
+      <Name>EntityDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityObjects\EntityObjects.csproj">
+      <Project>{c1aa4e5b-8f91-49fb-9f75-2750acb4e317}</Project>
+      <Name>EntityObjects</Name>
     </ProjectReference>
     <ProjectReference Include="..\UtilityBusinessObjects\UtilityBusiness.csproj">
       <Project>{3c352996-8ca6-41fd-ab30-95f73cc2c5e8}</Project>

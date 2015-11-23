@@ -19,17 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransferModule", "DataT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityBusiness", "UtilityBusinessObjects\UtilityBusiness.csproj", "{3C352996-8CA6-41FD-AB30-95F73CC2C5E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBScripts", "DBScripts", "{699F6ECE-413D-43DA-AFE3-B2B54D4058A4}"
-	ProjectSection(SolutionItems) = preProject
-		t_buyer_master.txt = t_buyer_master.txt
-		t_buyer_product.txt = t_buyer_product.txt
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityObjects", "EntityObjects\EntityObjects.csproj", "{C1AA4E5B-8F91-49FB-9F75-2750ACB4E317}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDataAccess", "EntityDataAccess\EntityDataAccess.csproj", "{AC850F8F-62B5-42DF-A83B-EA3468B560A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF.UnitTest", "EF.UnitTest\EF.UnitTest.csproj", "{D3B669DB-36E7-4D34-B43C-BD50C9922B2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SherlockUnitTest", "EF.UnitTest\SherlockUnitTest.csproj", "{D3B669DB-36E7-4D34-B43C-BD50C9922B2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

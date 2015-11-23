@@ -72,6 +72,21 @@
     <Compile Include="Objects\UserRoleDetail.cs" />
     <Compile Include="Objects\WebsiteMasterDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilityObjects\AllFieldCapture.cs" />
+    <Compile Include="UtilityObjects\BuyerIntegrationEnum.cs" />
+    <Compile Include="UtilityObjects\BuyerStateEnum.cs" />
+    <Compile Include="UtilityObjects\LeadStageEnum.cs" />
+    <Compile Include="UtilityObjects\LeadStages.cs" />
+    <Compile Include="UtilityObjects\LeadStatusDetails.cs" />
+    <Compile Include="UtilityObjects\LeadStatusEnum.cs" />
+    <Compile Include="UtilityObjects\MortgageAnnualIncomeEnum.cs" />
+    <Compile Include="UtilityObjects\MortgageCreditEnum.cs" />
+    <Compile Include="UtilityObjects\MortgageEmployeeStatusEnum.cs" />
+    <Compile Include="UtilityObjects\MortgagePeriodEnum.cs" />
+    <Compile Include="UtilityObjects\MortgagePropertyLocationEnum.cs" />
+    <Compile Include="UtilityObjects\MortgagePropertyTypeEnum.cs" />
+    <Compile Include="UtilityObjects\MortgageRateTypeEnum.cs" />
+    <Compile Include="UtilityObjects\MortgageRepaymentEnum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\EFDbContext.cs" />
+    <Compile Include="GenericRepository\GenericRepository.cs" />
     <Compile Include="Mapping\BuyerMortgageCriteriaDetailMap.cs" />
     <Compile Include="Mapping\BuyerMortgageFaceDetailMap.cs" />
     <Compile Include="Mapping\BuyerProductIntegrationDetailMap.cs" />
