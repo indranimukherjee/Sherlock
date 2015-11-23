@@ -8,29 +8,34 @@ namespace EntityObjects.Objects
 {
    public class MortgageTabledetail : BaseEntity
     {
+
+        public int LeadId { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public int? Age { get; set; }
+        public int EmploymentStatus { get; set; }
+        public int PeriodTerm { get; set; }
+        public int PropertyValue { get; set; }
+        public int LoanValue { get; set; }
+        public int CurrentDebt { get; set; }
+        public int PropertyType { get; set; }
+        public int PropertyLocation { get; set; }
+        public int CreditHistory { get; set; }
+        public int AnnualIncome { get; set; }
+        public bool MissAnyLoan { get; set; }
+        public bool HadBankruptcy { get; set; }
+        public bool AppliedIva { get; set; }
+        public bool HadCcj { get; set; }
+        public int RateId { get; set; }
+        public int RepaymentId { get; set; }
+
+
+
+        public virtual ICollection<MortgageTableDetailLog> MortgageLeadLog { get; set; }
+
+        public virtual UserDetail UserMaster { get; set; }
+        public virtual UserDetail UpdatedByUsers { get; set; }
+        public virtual CommonTableDetail CommonLead { get; set; }
+
        
-        public int lead_id { get; set; }
-        public DateTime date_of_birth { get; set; }
-        public int age { get; set; }
-        public int employment_status { get; set; }
-        public int period_term { get; set; }
-        public int property_value { get; set; }
-        public int loan_value { get; set; }
-        public int current_debt { get; set; }
-        public int property_type { get; set; }
-        public int property_location { get; set; }
-        public int credit_history { get; set; }
-        public int annual_income { get; set; }
-        public bool miss_any_loan { get; set; }
-        public bool had_bankruptcy { get; set; }
-        public bool applied_iva  { get; set; }
-
-
-        public bool had_ccj { get; set; }
-        public int rate_id { get; set; }
-
-        public int repayment_id { get; set; }
-     
-       //public virtual CommonTableDetail CommonTableDetail { get; set; }
 }
 }

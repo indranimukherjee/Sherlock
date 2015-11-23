@@ -52,7 +52,7 @@
     <Compile Include="Objects\BuyerProductStateDetail.cs" />
     <Compile Include="Objects\CategoryDetail.cs" />
     <Compile Include="Objects\CommonTableDetail.cs" />
-    <Compile Include="Objects\MortgageAnnualincomeDetail.cs" />
+    <Compile Include="Objects\CommonTableDetailLog.cs" />
     <Compile Include="Objects\MortgageCreditDetail.cs" />
     <Compile Include="Objects\MortgageEmpStatusDetail.cs" />
     <Compile Include="Objects\MortgagePeriodTermDetail.cs" />
@@ -61,6 +61,7 @@
     <Compile Include="Objects\MortgagerateRateDetail.cs" />
     <Compile Include="Objects\MortgagerateRepaymentDetail.cs" />
     <Compile Include="Objects\MortgageTabledetail.cs" />
+    <Compile Include="Objects\MortgageTableDetailLog.cs" />
     <Compile Include="Objects\PostcodeDetail.cs" />
     <Compile Include="Objects\ProductDetail.cs" />
     <Compile Include="Objects\ProductWebsiteDetail.cs" />

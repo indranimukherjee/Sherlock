@@ -2,9 +2,9 @@
 
 namespace EntityObjects.UtilityObjects
 {
-    public enum MortgageAnnualIncomeEnum
+    public int MortgageAnnualIncomeEnum
     {
-         £10,000=10000,
+        10000=10000,
         £15000=15000,
         £20,000=20000,
         £25,000=25000,
